@@ -16,14 +16,19 @@
         }
         .container {
             width: 600px;
+            max-width: 90%;
             height: 400px;
             position: relative;
         }
-        .button {
+        .button-container {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 70px;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            width: 100px;
             height: 40px;
             background-color: white;
             border: 2px solid black;
@@ -34,19 +39,19 @@
             text-decoration: none;
             color: black;
             font-size: 14px;
-            padding: 5px;
         }
         .description {
             position: absolute;
-            top: 20px;
-            right: 10px;
-            font-size: 20px;
+            top: 60px;
+            left: 10px;
+            font-size: 18px;
             color: green;
+            font-weight: bold;
         }
         .links {
             position: absolute;
             bottom: 10px;
-            right: 20px;
+            left: 20px;
             font-size: 16px;
             color: orange;
         }
@@ -54,19 +59,25 @@
             text-decoration: none;
             color: orange;
             margin: 0 10px;
+            display: block;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <a href="#" class="button">Home</a>
-        <p class="description">Biografias de tres candidatos presidenciales</p>
+        <div class="button-container">
+            <a href="#" class="button">Home</a>
+            <a href="candidato1.html" class="button">Candidato 1</a>
+            <a href="candidato2.html" class="button">Candidato 2</a>
+            <a href="candidato3.html" class="button">Candidato 3</a>
+        </div>
+        <p class="description">Biografías de tres candidatos presidenciales</p>
         <div class="links">
-            <a href="#">https://conexion.puce.edu.ec/elecciones-2025-por-quien-votar/</a>
-            <a href="#">https://es.wikipedia.org/wiki/Daniel_Noboa</a>
-            <a href="#">https://gk.city/2024/10/14/quien-es-francesco-tabacchi/</a>
-            <a href="#">https://es.teknopedia.teknokrat.ac.id/wiki/Jimmy_Jairala</a>
+            <a href="https://conexion.puce.edu.ec/elecciones-2025-por-quien-votar/">https://conexion.puce.edu.ec/elecciones-2025-por-quien-votar/</a>
+            <a href="https://es.wikipedia.org/wiki/Daniel_Noboa">https://es.wikipedia.org/wiki/Daniel_Noboa</a>
+            <a href="https://gk.city/2024/10/14/quien-es-francesco-tabacchi/">https://gk.city/2024/10/14/quien-es-francesco-tabacchi/</a>
+            <a href="https://es.teknopedia.teknokrat.ac.id/wiki/Jimmy_Jairala">https://es.teknopedia.teknokrat.ac.id/wiki/Jimmy_Jairala</a>
         </div>
     </div>
 
