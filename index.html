@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candidatos Presidenciales</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background-color: #add8e6; /* Fondo celeste */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 600px;
+            height: 400px;
+            position: relative;
+        }
+        .button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 40px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px;
+        }
+        .description {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            font-size: 20px;
+            color: green;
+        }
+        .links {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 16px;
+            color: orange;
+        }
+        .links a {
+            text-decoration: none;
+            color: orange;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <a href="#" class="button">Home</a>
+        <p class="description">Biografias de tres candidatos presidenciales</p>
+        <div class="links">
+            <a href="#">https://conexion.puce.edu.ec/elecciones-2025-por-quien-votar/</a>
+            <a href="#">https://es.wikipedia.org/wiki/Daniel_Noboa</a>
+            <a href="#">https://gk.city/2024/10/14/quien-es-francesco-tabacchi/</a>
+            <a href="#">https://es.teknopedia.teknokrat.ac.id/wiki/Jimmy_Jairala</a>
+        </div>
+    </div>
+
 </body>
 </html>
